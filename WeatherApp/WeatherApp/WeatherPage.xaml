@@ -7,7 +7,7 @@
              x:Class="WeatherApp.WeatherPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="New Page"/>
+            <Label Text="{Binding Source={x:Reference cityChoice}, Path=SelectedItem}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
