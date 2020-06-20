@@ -12,9 +12,10 @@ namespace WeatherApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WeatherPage : ContentPage
     {
-        public WeatherPage()
+        public WeatherPage(City city)
         {
             InitializeComponent();
+            cityName.Text = city.Name;
         }
     }
 }

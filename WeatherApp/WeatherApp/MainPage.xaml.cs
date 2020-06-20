@@ -26,7 +26,7 @@ namespace WeatherApp
 
         private void cityChoice_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new WeatherPage());
+            Navigation.PushModalAsync(new WeatherPage((City)cityChoice.SelectedItem));
         }
     }
 }
