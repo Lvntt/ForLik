@@ -17,9 +17,11 @@ namespace WeatherApp
             new City("Novosibrisk", 23.0, 65, 3),
             new City("Tomsk", 25.1, 70, 6)
         };
+
         public MainPage()
         {
             InitializeComponent();
+            cityChoice.ItemsSource = cities;
         }
 
         private void cityChoice_SelectedIndexChanged(object sender, EventArgs e)

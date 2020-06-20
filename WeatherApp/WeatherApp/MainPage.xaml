@@ -8,7 +8,13 @@
 
     <StackLayout>
         <Label Text="Choose a city: " FontSize="Title" Margin="0,250,0,0" HorizontalTextAlignment="Center" TextColor="Black"/>
-        <Picker x:Name="cityChoice" Title="Cities" FontSize="Subtitle" SelectedIndexChanged="cityChoice_SelectedIndexChanged" ItemsSource="cities" ItemDisplayBinding="Name"/>
+        <Picker
+            x:Name="cityChoice"
+            Title="Cities"
+            FontSize="Subtitle"
+            SelectedIndexChanged="cityChoice_SelectedIndexChanged"
+            ItemDisplayBinding="{Binding Name}"
+        />
     </StackLayout>
 
 </ContentPage>
