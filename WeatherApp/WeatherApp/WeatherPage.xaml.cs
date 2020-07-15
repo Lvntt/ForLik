@@ -15,7 +15,9 @@ namespace WeatherApp
         public WeatherPage(City city)
         {
             InitializeComponent();
-            cityName.Text = city.Name;
+
+            SetBinding(WeatherPage.TitleProperty, new Binding(city.Name)); // - так Title не изменяется
+            //cityName.Text = city.Name;
         }
     }
 }
