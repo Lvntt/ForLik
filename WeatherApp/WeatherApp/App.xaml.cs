@@ -9,7 +9,6 @@ namespace WeatherApp
         public App()
         {
             InitializeComponent();
-
             MainPage = new NavigationPage(new WeatherApp.MainPage());
         }
 

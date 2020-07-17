@@ -21,6 +21,7 @@ namespace WeatherApp
         public MainPage()
         {
             InitializeComponent();
+            Title = "Weather App";
             cityChoice.ItemsSource = cities;
         }
 
